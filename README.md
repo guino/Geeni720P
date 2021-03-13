@@ -79,7 +79,7 @@ $ sudo ls home/app
 network  ppsapp  ppsdsry
 ```
 
-There's the old/familiar ppsapp we need to patch for RTSP. We have the option to patch and flash it directly but in order to provide extra features I chose to just add a new startup script `home/app/S70custom` with the following contents:
+There's the old/familiar ppsapp we need to patch for RTSP. We have the option to patch and flash it directly but in order to provide extra features I chose to just add a new startup script `home/init.d/S70custom` with the following contents:
 
 ```
 $ chmod +x S70custom
