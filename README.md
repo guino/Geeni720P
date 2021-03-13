@@ -104,6 +104,10 @@ With the script created/saved it's now time to put back into the flash:
 
 ```
 $ sudo umount app
+$ sudo dd if=/dev/mtdblock2 of=290000.jffs2 bs=1 count=5701632
+5701632+0 records in
+5701632+0 records out
+5701632 bytes (5.7 MB, 5.4 MiB) copied, 6.34179 s, 899 kB/s
 $ cp flash.bin flash-custom.bin
 $ dd conv=notrunc if=290000.jffs2 of=flash-custom.bin bs=1 seek=$((0x290000))
 5701632+0 records in
